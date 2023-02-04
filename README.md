@@ -48,9 +48,14 @@ awk -F"\t" 'OFS="\t" {print $1":"$2":"$4":"$5, $8}' lof_sorted.vcf | awk -F['\t,
 
 Now run the python script preprocessing_pipeline.py, using the command:
 ```
-python3 preprocessing_pipeline.py.
+python3 preprocessing_pipeline.py
 ```
 This will result in an output file called pipeline.csv. It can now be used as the input for both the models.
+
+Alternatively, all python scripts can be run using spyder, which can be launched through a terminal where the required conda environmentis active simply by typing:
+```
+spyder
+```
 
 
 ## Creating the Models
