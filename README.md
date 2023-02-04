@@ -2,15 +2,15 @@
 Protocol for classifying variants present in BRCA1 and BRCA2 genes linked with Breast and Ovarian cancers using ML models.
 
 
-##About
+## About
 brca-NOVUS has been created to facilitate the classification of variants of uncertain significance. We have trained our models on a database comprising of gold-standard variants classified by ACMG/AMP Guidelines.  The algorithms used are based on the scalable tree boosting system XGBoost, since traditionally tree ensemble models are relied on for tabular data classification. This README document illustrates the installation, preprocessing and procedure for running both the models.
 
 
-##Installation
+## Installation
 Download and install the latest version of [Anaconda](https://docs.anaconda.com/anaconda/install/linux/). Additionally, download and install [ANNOVAR](https://annovar.openbioinformatics.org/en/latest/user-guide/download/) and [Loftee](https://github.com/konradjk/loftee) for hg38.
 
 
-##Create and activate the brca-NOVUS conda environment:
+## Create and activate the brca-NOVUS conda environment:
 ```
 conda env create -f brca-NOVUS.yml
 conda activate brca-NOVUS
@@ -53,8 +53,8 @@ python3 preprocessing_pipeline.py.
 This will result in an output file called pipeline.csv. It can now be used as the input for both the models.
 
 
-##Creating the Models
+## Creating the Models
 The models for each gene can be run using the scripts in the model_creation folder using the scripts model_creation_brca1.py, and model_creation_brca2.py respectively. The input processed file containing the training data would need to be placed in the folder. The models would be saved to the same folder, while the resulting metrics and graphs for each gene would be saved to their respective folder (brca1 / brca2).
 
-##Predictions
+## Predictions
 Predictions can be made using our models on the user data after processing the VCF into pipelie.py as discussed above, and leaving the "Outcome" column blank. The scripts variant_classification_brca1.py in the BRCA1 folder, and variant_classification_brca2.py in the BRCA2 folder can be used to run our models to obtain predictions for each gene respectively. 
