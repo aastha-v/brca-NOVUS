@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 from pandas import read_csv
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, precision_recall_curve, roc_curve, roc_auc_score, matthews_corrcoef 
 import seaborn as sns
-from sklearn.impute import SimpleImputer
 from numpy import nan
 
 
