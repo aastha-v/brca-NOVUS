@@ -2,8 +2,6 @@ import xgboost as xgb
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
-from pytorch_tabnet.tab_model import TabNetClassifier
-import torch
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report, precision_recall_curve, roc_curve, roc_auc_score, matthews_corrcoef 
 import seaborn as sns
 from pandas import read_csv
