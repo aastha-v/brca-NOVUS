@@ -102,7 +102,6 @@ plt.savefig("brca1/boosted_trees.png", dpi=600)
 #feature importance
 figure7 = plt.figure()
 xgb.plot_importance(model)
-plt.rcParams['figure.figsize'] = [7, 7]
 plt.margins()
 plt.savefig("brca1/feature_importance.png", bbox_inches='tight', dpi=600)
 
