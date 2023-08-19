@@ -1,7 +1,7 @@
-name: tmp
+name: brcaNOVUS
 dependencies:
   - scikit-learn
-  - pandas
+  - pandas==1.3.5
   - matplotlib
   - matplotlib-base
   - numpy-base
@@ -16,4 +16,4 @@ dependencies:
       - seaborn
       - spyder-kernels==2.3.3
       - graphviz
-prefix: /home/aastha/anaconda3/envs/tmp
+prefix: /home/$USER/anaconda3/envs/brcaNOVUS
