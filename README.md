@@ -50,8 +50,8 @@ input_filename='myvcf.vcf'
 ## Generating a New Model
 In order to train a new model based on your own data, the following commands can be run. Place your VCF in the brca-NOVUS/input_folder (example: train_brca1.vcf) along with a file in which the first column represents your variant, and the second its pathogenicity (example: op_outcome_train_brca1). The first command will create and save your model as brca-NOVUS/model_creation/selfmodel_brca1.txt, and generate and save the model's performance metrics in the brca-NOVUS/model_creation/brca1 folder.
 ```
-brca-NOVUS/scripts/model_creation_brca1.sh
-brca-NOVUS/scripts/model_creation_brca2.sh
+bash brca-NOVUS/scripts/model_creation_brca1.sh
+bash brca-NOVUS/scripts/model_creation_brca2.sh
 ```
 
 In order to generate predictions using your models, run the following commands. The predictions will be saved to the brca-NOVUS/model_creation/brca1 folder as selfpredictions_brca1.csv
