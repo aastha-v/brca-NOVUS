@@ -42,7 +42,7 @@ bash brca-NOVUS/troubeshooting.sh
 ```
 
 
-To process a VCF with a different name than "sample.vcf", modify the "input_filename" in the predictions_brca1.sh 1/2.sh script and then run it:
+To process a VCF with a different name than "sample.vcf", modify the "input_filename" in the predictions_brca1/2.sh script and then run it:
 ```
 input_filename='myvcf.vcf'
 ```
